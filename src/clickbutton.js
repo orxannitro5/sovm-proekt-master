@@ -19,9 +19,7 @@ export default class Captcha extends Component{
                     <p>Пожалуйста, подтвердите, что вы не робот.</p>
                     </div>   
                 </div>
-            </>
-            
-                
+            </>  
             )
     }
 } 

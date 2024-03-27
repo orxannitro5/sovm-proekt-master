@@ -21,7 +21,7 @@ export default class Captcha extends Component{
                 </div>
             </>
             
-                
+          
             )
     }
 } 

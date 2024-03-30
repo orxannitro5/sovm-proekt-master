@@ -20,8 +20,10 @@ export default class FirstBlock extends Component {
                             <div className="nav">Развлечение</div>
                             <div className="nav">Контакты</div>
                             <div className="nav-rent">Забрoнировать</div>
-                            <img className="burger-menu" alt="" src={burger} />
-
+                        </div>
+                        <div className="active-for-phone">
+                         <div className="bron">Забрoнировать</div>
+                         <img className="burger-menu" alt="" src={burger} />
                         </div>
                     </div>
                 </div>

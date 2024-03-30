@@ -23,12 +23,12 @@
     width: 30px;
     margin-right: 35px;
 }
-@media(max-width:1040px){
+@media(max-width:1024px){
     .footer-content{
         width: 700px;
     }
 }
-@media(max-width:710px){
+@media(max-width:768px){
     .footer-content{
         display: flex;
         flex-wrap: wrap;
@@ -38,6 +38,4 @@
         text-align: center;
     }
 }
-@media(max-width:400px){
-    
-}
+

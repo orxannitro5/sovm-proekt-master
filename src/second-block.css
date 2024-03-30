@@ -41,6 +41,7 @@
 }
 .main-area-second-section{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .all-inputs{
@@ -55,7 +56,7 @@
     height: 35px;
     margin-top: 25px;
     padding-left: 15px;
-    border: 2px solid rgb(0, 170, 255);
+    border: 1px solid rgb(0, 170, 255);
 }
 .input::placeholder{
     color: rgb(28, 27, 27);
@@ -69,7 +70,7 @@
     margin-top: 25px;
     padding-left: 15px;
     padding-top: 15px;
-    border: 2px solid rgb(0, 170, 255);
+    border: 1px solid rgb(0, 170, 255);
     resize: none;
     height: 100px;
 }
@@ -79,6 +80,13 @@
 .textarea::placeholder{
     color: rgb(28, 27, 27);
     font-size: 16px;
+
+}
+.textarea:hover{
+    border: 2px solid rgb(0, 170, 255);
+}
+.input:hover{
+    border: 2px solid rgb(0, 170, 255);
 
 }
 .send-btn{
@@ -91,11 +99,23 @@
     font-family: "Raleway", sans-serif;
     font-size: 16px;
 }
+.send-btn:hover{
+    background-color: white;
+    color: rgb(0, 170, 255);
+}
+.nav:hover{
+    color: rgba(0, 170, 255, 0.381);
+}
 .a{
     background-color: rgb(227, 219, 219);
 }
-
-@media(max-width:1040px){
+.nav-rent:hover{
+    
+        background-color: white;
+        color: rgb(0, 170, 255);
+    
+}
+@media(max-width:1024px){
     .contact-text{
         left: -180px;
     }
@@ -103,16 +123,34 @@
         width: 650px;
     }
     .main-area-text{
-        width: 600px;
+        width: 100%;
+    }
+    .main-area-second-section{
+        justify-content: space-between;
+        
+    }
+    .main-area-second-section-left-side{
+        width: 100%;
+        text-align: center;
+    }
+    .all-inputs{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        
     }
     .main-area-second-section-left-side-title{
         font-size: 28px;
     }
-    .input,.textarea{
-        width: 400px;
+    .main-area-second-section-right-side{
+        width: 100%;
     }
+    .input,.textarea{
+        width: calc(100%-17px);
+    }
+    
 }  
-@media(max-width:710px) {
+@media(max-width:768px) {
     .contact-text{
         width: 200px;
         height: 20px;
@@ -123,20 +161,19 @@
         left: 0px;
     }
     .main-area{
-        width: 333px;
+        width: calc(100% - 114px);
         left: 0px;
     }
-    .main-area-text{
-        width: 270px;
-    }
-    .main-area-second-section-left-side{
-        width: 80px;
-    }
     .input,.textarea{
-        width: 170px;
+        width: 100%;
     }
+
+    .main-area-second-section-left-side{
+        margin-right: 0px
+    }
+    
 } 
-@media(max-width:400px){
+/* @media(max-width:375px){
     .main-area,.main-area-second-section{
         width: 210px;
         display: flex;
@@ -147,5 +184,5 @@
         width: 100%;
         text-align: center;
     }
-}
+} */
 

@@ -49,7 +49,7 @@ export default class SecondBlock extends Component {
                         </div>
                     </div>
                 </div>
-                {showModal && <Captcha />}
+                {showModal && <Captcha />}                
             </div>
         );
     };
